@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PORSCHE</title>
+    <title>Classic Cars Showcase</title>
     
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
@@ -19,23 +19,23 @@
             color: white;
             padding: 20px 0;
             text-align: center;
-            position: relative; 
+            position: relative; /* Added for logo positioning */
         }
         .logo {
-            position: absolute;
-            left: 20px; 
-            top: 20px; 
-            height: 80px; 
-            transition: transform 0.6s; 
-            object-fit: contain; 
+            position: absolute; /* Position logo in top left */
+            left: 20px; /* Adjust as needed */
+            top: 20px; /* Adjust as needed */
+            height: 80px; /* Adjust this value to fit your title box */
+            transition: transform 0.6s; /* Animation duration */
+            object-fit: contain; /* Maintain aspect ratio */
 }
         .logo:hover {
-            transform: scaleX(-1); 
+            transform: scaleX(-1); /* Flip the logo laterally on hover */
 }
 
         .title {
-            font-family: 'Archivo Black', sans-serif; 
-            font-size: 4em;
+            font-family: 'Archivo Black', sans-serif; /* Use the Archivo Black font */
+            font-size: 4em; /* Increased heading size */
             transition: transform 0.3s ease;
         }
         .title:hover {
@@ -125,7 +125,7 @@
         <div class="car-info">
             <h3>Porsche 911</h3>
             <p>Price: $35,000</p>
-            <button>View Details</button>
+            <button onclick="window.location.href='about.html'">View Details</button>
         </div>
     </div>
     <div class="car">
@@ -133,7 +133,7 @@
         <div class="car-info">
             <h3>Porsche 718</h3>
             <p>Price: $45,000</p>
-            <button>View Details</button>
+            <button onclick="window.location.href='about.html'">View Details</button>
         </div>
     </div>
     <div class="car">
@@ -141,7 +141,7 @@
         <div class="car-info">
             <h3>Porsche Taycan</h3>
             <p>Price: $60,000</p>
-            <button>View Details</button>
+            <button onclick="window.location.href='about.html'">View Details</button>
         </div>
     </div>
     <div class="car">
@@ -149,7 +149,7 @@
         <div class="car-info">
             <h3>Porsche Cayenne</h3>
             <p>Price: $50,000</p>
-            <button>View Details</button>
+            <button onclick="window.location.href='about.html'">View Details</button>
         </div>
     </div>
     <div class="car">
@@ -157,7 +157,7 @@
         <div class="car-info">
             <h3>Porsche Macan</h3>
             <p>Price: $50,000</p>
-            <button>View Details</button>
+            <button onclick="window.location.href='about.html'">View Details</button>
         </div>
     </div>
     <div class="car">
@@ -165,15 +165,15 @@
         <div class="car-info">
             <h3>Porsche Panamera</h3>
             <p>Price: $50,000</p>
-            <button>View Details</button>
+            <button onclick="window.location.href='about.html'">View Details</button>
         </div>
     </div>
     <div class="car">
         <img src="image/giphy.webp" alt="Classic Car 7">
         <div class="car-info">
             <h3>Coming Soon</h3>
-            <p>$**,***</p>
-            <button>Pre-Register</button>
+            <p>$,*</p>
+            <button onclick="window.location.href='about.html'">Pre-Register</button>
         </div>
     </div>
 </section>

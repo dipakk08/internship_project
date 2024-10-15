@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classic Cars Showcase</title>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #1C1C1C;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: relative; /* Added for logo positioning */
+        }
+        .logo {
+            position: absolute; /* Position logo in top left */
+            left: 20px; /* Adjust as needed */
+            top: 20px; /* Adjust as needed */
+            height: 80px; /* Adjust this value to fit your title box */
+            transition: transform 0.6s; /* Animation duration */
+            object-fit: contain; /* Maintain aspect ratio */
+}
+        .logo:hover {
+            transform: scaleX(-1); /* Flip the logo laterally on hover */
+}
+
+        .title {
+            font-family: 'Archivo Black', sans-serif; /* Use the Archivo Black font */
+            font-size: 4em; /* Increased heading size */
+            transition: transform 0.3s ease;
+        }
+        .title:hover {
+            transform: scale(1.1);
+        }
+        nav {
+            background-color: #fad766;
+            padding: 15px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s;
+        }
+        nav a {
+            color: black;
+            font-size: 1.5em;
+            margin: 0 20px;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.8);
+            transform: scale(1.1);
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .car {
+            background: white;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            margin: 15px;
+            overflow: hidden;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .car:hover {
+            transform: translateY(-5px);
+        }
+        .car img {
+            width: 100%;
+            height: auto;
+        }
+        .car-info {
+            padding: 15px;
+            text-align: center;
+        }
+        .car-info h3 {
+            margin: 10px 0 5px;
+            font-size: 1.5em;
+        }
+        .car-info p {
+            margin: 5px 0;
+            font-size: 1.2em;
+            color: #333;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="image/porsche.png" alt="Porsche Logo" class="logo">
+    <div class="title">PORSCHE</div>
+</header>
+
+<nav>
+    <a href="home.html">Home</a>
+    <a href="gallery.html">Video Showcase</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<section class="gallery" id="gallery">
+    <div class="car">
+        <img src="image/911.avif" alt="Classic Car 1">
+        <div class="car-info">
+            <h3>Porsche 911</h3>
+            <p>Price: $35,000</p>
+            <button>View Details</button>
+        </div>
+    </div>
+    <div class="car">
+        <img src="image/718.webp" alt="Classic Car 2">
+        <div class="car-info">
+            <h3>Porsche 718</h3>
+            <p>Price: $45,000</p>
+            <button>View Details</button>
+        </div>
+    </div>
+    <div class="car">
+        <img src="image/taycan.avif" alt="Classic Car 3">
+        <div class="car-info">
+            <h3>Porsche Taycan</h3>
+            <p>Price: $60,000</p>
+            <button>View Details</button>
+        </div>
+    </div>
+    <div class="car">
+        <img src="image/cayenne.jpeg" alt="Classic Car 4">
+        <div class="car-info">
+            <h3>Porsche Cayenne</h3>
+            <p>Price: $50,000</p>
+            <button>View Details</button>
+        </div>
+    </div>
+    <div class="car">
+        <img src="image/macan.avif" alt="Classic Car 5">
+        <div class="car-info">
+            <h3>Porsche Macan</h3>
+            <p>Price: $50,000</p>
+            <button>View Details</button>
+        </div>
+    </div>
+    <div class="car">
+        <img src="image/panamera.avif" alt="Classic Car 6">
+        <div class="car-info">
+            <h3>Porsche Panamera</h3>
+            <p>Price: $50,000</p>
+            <button>View Details</button>
+        </div>
+    </div>
+    <div class="car">
+        <img src="image/giphy.webp" alt="Classic Car 7">
+        <div class="car-info">
+            <h3>Coming Soon</h3>
+            <p>$**,***</p>
+            <button>Pre-Register</button>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; Internship Project Semester 3 | All Rights Reserved</p>
+    <p>Designed by Dipak Upadhyay</p>
+</footer>
+
+</body>
+</html>

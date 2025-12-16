@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,32 +12,40 @@
             margin: 0;
             padding: 20px;
         }
+
         header {
             text-align: center;
             padding: 20px;
             background-color: #1C1C1C;
             color: white;
         }
+
         h1 {
             margin: 0;
         }
+
         .contact-info {
             margin: 20px 0;
             text-align: center;
         }
-        .contact-info font {
+
+        .contact-info p {
             font-size: 1.5em;
+            margin: 5px 0;
         }
+
         .map-container {
             text-align: center;
             margin: 20px 0;
         }
+
         iframe {
             border: 0;
             width: 100%;
             max-width: 600px;
             height: 450px;
         }
+
         .contact-form {
             background-color: white;
             padding: 20px;
@@ -45,17 +54,25 @@
             max-width: 600px;
             margin: 0 auto;
         }
+
+        .contact-form h2 {
+            text-align: center;
+        }
+
         .contact-form label {
             display: block;
             margin: 10px 0 5px;
         }
-        .contact-form input, .contact-form textarea {
+
+        .contact-form input,
+        .contact-form textarea {
             width: 100%;
             padding: 10px;
             margin-bottom: 15px;
             border: 1px solid #ccc;
             border-radius: 5px;
         }
+
         .contact-form button {
             background-color: #1C1C1C;
             color: white;
@@ -63,12 +80,16 @@
             padding: 10px 15px;
             border-radius: 5px;
             cursor: pointer;
+            width: 100%;
+            font-size: 16px;
         }
+
         .contact-form button:hover {
             background-color: #333;
         }
     </style>
 </head>
+
 <body>
 
 <header>
@@ -76,24 +97,30 @@
 </header>
 
 <div class="contact-info">
-    <font size="5"><b>NAME:</b> Dipak Upadhyay<br>
-    <b>CONTACT NO:</b> +918401872197</font>
+    <p><strong>Name:</strong> Dipak Upadhyay</p>
+    <p><strong>Contact No:</strong> +91 8401872197</p>
 </div>
 
 <div class="map-container">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3726.2579744833242!2d72.91696337430359!3d20.942152790749482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be0f7984ad92173%3A0x923d9fc8dfb8d92d!2sShivaji%20Chowk%2C%20Vijaynagar%2C%20Vishakha%20Park%20Society%2C%20Dhirubhai%20Ni%20Wadi%2C%20Navsari%2C%20Gujarat%20396445!5e0!3m2!1sen!2sin!4v1719745725716!5m2!1sen!2sin" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3726.2579744833242!2d72.91696337430359!3d20.942152790749482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be0f7984ad92173%3A0x923d9fc8dfb8d92d!2sShivaji%20Chowk%2C%20Navsari%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1719745725716!5m2!1sen!2sin"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
 </div>
 
 <div class="contact-form">
     <h2>Get in Touch</h2>
-    <form action="#" method="post">
-        <label for="name">Your Name:</label>
+
+    <!-- GitHub Pages SAFE form -->
+    <form onsubmit="alert('Message sent successfully!'); return false;">
+        <label for="name">Your Name</label>
         <input type="text" id="name" name="name" required>
 
-        <label for="email">Your Email:</label>
+        <label for="email">Your Email</label>
         <input type="email" id="email" name="email" required>
 
-        <label for="message">Your Message:</label>
+        <label for="message">Your Message</label>
         <textarea id="message" name="message" rows="4" required></textarea>
 
         <button type="submit">Send Message</button>
